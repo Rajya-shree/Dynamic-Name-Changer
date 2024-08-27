@@ -1,0 +1,49 @@
+<!--
+Short cut to create empty html structure id type '!' then press enter-->
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="name">Name</h1>
+    <button id="john" onclick="Change()">John</button>
+    <button id="hari" onclick="Change()">Hari</button>
+    <button id="roy" onclick="Change()">Roy</button>
+    <script>
+        var john = document.getElementById("john");
+        var hari = document.getElementById("hari");
+        var roy = document.getElementById("roy");
+        var name = document.getElementById("name");
+        function Change(){
+            console.log("john")
+            document.getElementById("name").innerHTML = "Hohn";
+        }
+    </script>
+</body>
+</html>
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="name">Name</h1>
+    <button id="btn" onclick="Change(event)">John</button>
+    <button id="btn" onclick="Change(event)">Hari</button>
+    <button id="btn" onclick="Change(event)">Roy</button>
+    <script>
+        var h1 = document.getElementById("name");
+        function Change(event){
+            h1.textContent = event.target.textContent
+            console.log(event.target.textContent)
+        }
+    </script>
+</body>
+</html>
